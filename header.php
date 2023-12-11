@@ -68,7 +68,7 @@ if(!in_array('television', $current_user->roles)) : ?>
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarInformationsDropdown">
                     <li><a class="dropdown-item" href="<?php echo home_url('/creer-utilisateur') ?>">Créer un utilisateur</a></li>
-                    <li><a class="dropdown-item" href="<?php echo home_url('/liste-utilisateur') ?>">Voir les utilisateurs</a></li>
+                    <li><a class="dropdown-item" href="<?php echo home_url('/users/list') ?>">Voir les utilisateurs</a></li>
                   </ul>
                 </li>
             <?php endif;
