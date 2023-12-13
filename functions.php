@@ -19,7 +19,27 @@ function wp_maintenance_mode()
 }
 add_action('get_header', 'wp_maintenance_mode');
 */
+add_action('admin_post_delete_user', 'handle_delete_user');
 
+function handle_delete_user() {
+    $user_id = isset($_GET['id']) ? $_GET['id'] : 0;
+    $nonce = isset($_GET['_wpnonce']) ? $_GET['_wpnonce'] : '';
+
+    if (!wp_verify_nonce($nonce, 'delete_user_' . $user_id)) {
+        die('Opération non autorisée');
+    }
+
+
+    if (current_user_can('delete_users')) {
+
+        wp_delete_user($user_id);
+    } else {
+        die('Vous n\'avez pas les droits nécessaires pour effectuer cette action.');
+    }
+
+    wp_redirect(admin_url('users.php'));
+    exit;
+}
 function add_scripts()
 {
   $current_user = wp_get_current_user();
