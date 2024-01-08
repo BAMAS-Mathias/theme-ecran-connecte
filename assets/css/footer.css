@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium Web');
+
+#texte {
+    color: black;
+    font-family: "Titillium Web";
+    float: left;
+    position: relative;
+    right: -96%;
+}
+
+#fleche {
+    height: 45px;
+    width: 45px;
+    display: block;
+    margin-left: auto;
+}
