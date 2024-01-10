@@ -27,7 +27,7 @@ if(in_array('television', $current_user->roles)) : ?>
 if(!in_array('television', $current_user->roles)) : ?>
     <header>
         <div class="header-bg">
-            <div id="orange" class="header-content">
+            <div class="header-content orange">
                 <img src="https://iut.univ-amu.fr/themes/amu/amu_iut/logo.svg" alt="logo-iut" id="img-iut">
                 <h1 id="titre"><?php echo single_post_title(); ?></h1>
             </div>
