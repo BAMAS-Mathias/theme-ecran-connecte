@@ -4,14 +4,21 @@
     body{
         overflow-x: hidden;
     }
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
     #fleche-icon {
         max-width: 3vw;
     }
 
     .container-retour {
-        position: absolute;
-        right: 5%;
-        bottom: 5%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 15%;
+        padding-bottom: 5%;
     }
 </style>
 <footer >
