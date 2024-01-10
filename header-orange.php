@@ -33,7 +33,7 @@ if(!in_array('television', $current_user->roles)) : ?>
             </div>
         </div>
     </header>
-    <main style="height: 70vh">
+    <main>
         <?php the_content(); ?>
     </main>
 <?php endif; ?>
