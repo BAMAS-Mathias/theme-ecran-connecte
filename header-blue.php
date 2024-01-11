@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(). '/assets/css/secretary-header.css' ?>">
     <?php wp_head(); ?>
 </head>
+
 <!-- BODY -->
 <?php $current_user = wp_get_current_user();
 if(in_array('television', $current_user->roles)) : ?>
@@ -23,13 +24,28 @@ if(in_array('television', $current_user->roles)) : ?>
 <?php endif; ?>
 
 <!-- HEADER -->
-<?php $current_user = wp_get_current_user();
-if(!in_array('television', $current_user->roles)) : ?>
+<?php
+$current_user = wp_get_current_user();
+if(!in_array('television', $current_user->roles)) :
+
+    $current_page_title = get_the_title();
+
+    $custom_titles = [
+        'secretary-welcome' => 'Menu',
+        'homepage' => 'Page D Accueil',
+        'year-student-schedule' => 'Emplois du Temps',
+        'main-menu' => 'Menu',
+        'all-years-schedule' => 'Emplois du Temps pour toutes les Années',
+        'weekly-computer-room-schedule' => 'Horraires Salles Informatiques',
+
+    ];
+    $custom_title = isset($custom_titles[$current_page_title]) ? $custom_titles[$current_page_title] : $current_page_title;
+    ?>
     <header>
         <div class="header-bg">
             <div class="header-content blue">
                 <img src="https://iut.univ-amu.fr/themes/amu/amu_iut/logo.svg" alt="logo-iut" id="img-iut">
-                <h1 id="titre"><?php echo single_post_title(); ?></h1>
+                <h1 id="titre"><?php echo $custom_title; ?></h1>
             </div>
         </div>
     </header>
@@ -38,3 +54,4 @@ if(!in_array('television', $current_user->roles)) : ?>
     </main>
 
 <?php endif; ?>
+<?php get_footer('bouton-retour'); ?>

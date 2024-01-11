@@ -23,13 +23,28 @@ if(in_array('television', $current_user->roles)) : ?>
 <?php endif; ?>
 
 <!-- HEADER -->
-<?php $current_user = wp_get_current_user();
-if(!in_array('television', $current_user->roles)) : ?>
+<?php
+$current_user = wp_get_current_user();
+if(!in_array('television', $current_user->roles)) :
+
+    $current_page_title = get_the_title();
+
+    $custom_titles = [
+        'room-schedule' => 'Salles Disponibles',
+        'teacher-search-schedule' => 'Recherche des Enseignants',
+        'computer-rooms' => 'Salles Machines',
+        'teacher-schedule' => 'Emplois du Temps Enseignant  ',
+        'computer-rooms' => 'Salles Machines',
+    ];
+
+
+    $custom_title = isset($custom_titles[$current_page_title]) ? $custom_titles[$current_page_title] : $current_page_title;
+    ?>
     <header>
         <div class="header-bg">
             <div class="header-content orange">
                 <img src="https://iut.univ-amu.fr/themes/amu/amu_iut/logo.svg" alt="logo-iut" id="img-iut">
-                <h1 id="titre"><?php echo single_post_title(); ?></h1>
+                <h1 id="titre"><?php echo $custom_title; ?></h1>
             </div>
         </div>
     </header>
