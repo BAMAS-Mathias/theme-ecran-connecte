@@ -17,7 +17,7 @@
     .container-retour {
         display: flex;
         justify-content: flex-end;
-        padding-right: 15%;
+        padding-right: 10%;
         padding-bottom: 5%;
     }
 </style>
