@@ -33,7 +33,7 @@
 <footer >
     <div class="container-retour">
         <a onclick="history.back()">
-            <img id="fleche-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/en-arriere.png" alt="Logo retour">
+            <img id="fleche-icon" src='/wp-content/themes/theme-ecran-connecte/assets/images/en-arriere.png'>
             <h6 id="texte"> RETOUR </h6>
         </a>
     </div>
