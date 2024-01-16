@@ -37,6 +37,9 @@ if(!in_array('television', $current_user->roles)) :
         'main-menu' => 'Menu',
         'all-years-schedule' => 'Emplois du Temps pour toutes les Années',
         'weekly-computer-room-schedule' => 'Horraires Salles Informatiques',
+        'secretary-config' => 'Configuration',
+        'config-schedule' => 'Configuration Emplois du Temps'
+
 
     ];
     $custom_title = isset($custom_titles[$current_page_title]) ? $custom_titles[$current_page_title] : $current_page_title;
