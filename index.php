@@ -1,4 +1,12 @@
-<?php get_header(); ?>
+<?php
+/**
+ * Ce code génère la structure HTML d'une page web avec un en-tête, un contenu principal et un pied de page.
+ * Il affiche une liste d'articles provenant de la boucle WordPress.
+ */
+
+// Inclusion de l'en-tête de la page.
+get_header(); ?>
+
     <!-- MAIN -->
     <main class="container">
         <section class="content-area content-thin">
@@ -12,10 +20,12 @@
                 </article>
             <?php endwhile; else : ?>
                 <article>
-                    <p>Sorry, no posts were found!</p>
+                    <p>Aucun article trouvé !</p>
                 </article>
             <?php endif; ?>
         </section>
         <?php get_sidebar(); ?>
     </main>
+
+    <!-- Inclusion du pied de page -->
 <?php get_footer(); ?>
