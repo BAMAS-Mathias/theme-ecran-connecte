@@ -22,15 +22,32 @@
         margin: 0 auto;
     }
 
+    .texte{
+        color: #0b0e11;
+    }
+
+    a{
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+
+    a:hover{
+        transform: scale(1.1);
+    }
+
 </style>
 <div class="container-retour">
     <a href="https://ecran1.alwaysdata.net/secretary/config/">
-        <img id="fleche-icon" src='/wp-content/themes/theme-ecran-connecte/assets/images/Option.png'>
-        <h6 id="texte"> OPTION </h6>
+        <img id="fleche-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/option.png">
+        <h6 class="texte"> OPTION </h6>
     </a>
     <a onclick="history.back()">
-        <img id="fleche-icon" src='/wp-content/themes/theme-ecran-connecte/assets/images/en-arriere.png'>
-        <h6 id="texte"> RETOUR </h6>
+        <img id="fleche-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/en-arriere.png">
+        <h6 class="texte"> RETOUR </h6>
     </a>
 </div>
 </footer>
