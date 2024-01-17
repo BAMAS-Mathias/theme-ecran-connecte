@@ -56,6 +56,7 @@ if (!in_array('television', $current_user->roles)) :
         'teacher-schedule' => 'Emplois du Temps Enseignant  ',
         'computer-rooms' => 'Salles Machines',
         'lock-room' => 'Vérouiller la Salle',
+        'computer-room-schedule' => 'Emplois du temps salles',
     ];
 
     // Utilisation du titre personnalisé s'il existe, sinon utilisation du titre de la page.
