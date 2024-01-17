@@ -41,7 +41,7 @@
 
 </style>
 <div class="container-retour">
-    <a href="https://ecran1.alwaysdata.net/secretary/config/">
+    <a href="<?php echo home_url("/secretary/config"); ?>">
         <img id="fleche-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/option.png">
         <h6 class="texte"> OPTION </h6>
     </a>
