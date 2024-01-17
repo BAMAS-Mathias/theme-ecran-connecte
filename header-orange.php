@@ -57,6 +57,7 @@ if (!in_array('television', $current_user->roles)) :
         'computer-rooms' => 'Salles Machines',
         'lock-room' => 'Vérouiller la Salle',
         'computer-room-schedule' => 'Emplois du temps salles',
+        'config-ade' => 'Configuration code Ade',
     ];
 
     // Utilisation du titre personnalisé s'il existe, sinon utilisation du titre de la page.
