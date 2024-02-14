@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  --color-button-text: #fff;
+  --color-button-text: #ffffff;
   --color-primary-100: #dee3ea;
   --color-primary-200: #b2bdcd;
   --color-primary-300: #5d7290;
@@ -12,7 +12,7 @@
   --color-primary-800: #151a21;
   --color-primary-900: #0b0e11;
   --color-secondary-washed-out: #879eed;
-  --color-secondary: #5575e7;
+  --color-secondary: #2c57c0;
   --color-accent-glow: rgba(253,77,77,0.3);
   --color-accent: #fd4d4d;
   --color-accent-hover: #fd6868;

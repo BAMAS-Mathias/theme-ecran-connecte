@@ -53,10 +53,10 @@ if (!in_array('television', $current_user->roles)) :
         'room-schedule' => 'Salles Disponibles',
         'teacher-search-schedule' => 'Recherche des Enseignants',
         'computer-rooms' => 'Salles Machines',
-        'teacher-schedule' => 'Emplois du Temps Enseignant  ',
+        'teacher-schedule' => 'Emploi du Temps Enseignant  ',
         'computer-rooms' => 'Salles Machines',
         'lock-room' => 'Vérrouiller la Salle',
-        'computer-room-schedule' => 'Emplois du temps salles',
+        'computer-room-schedule' => 'Emploi du temps salles',
         'config-computer-room' => 'Selection des salles machines',
         'config-ade' => 'Configuration des groupes'
     ];

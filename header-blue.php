@@ -52,12 +52,12 @@ if (!in_array('television', $current_user->roles)) :
     $custom_titles = [
         'secretary-welcome' => 'Menu',
         'homepage' => 'Page D Accueil',
-        'year-student-schedule' => 'Emplois du Temps',
+        'year-student-schedule' => 'Emploi du Temps',
         'main-menu' => 'Menu',
-        'all-years-schedule' => 'Emplois du Temps pour toutes les Années',
+        'all-years-schedule' => 'Emploi du Temps pour toutes les Années',
         'weekly-computer-room-schedule' => 'Horaires Salles Informatiques',
         'secretary-config' => 'Configuration',
-        'config-schedule' => 'Configuration Emplois du Temps'
+        'config-schedule' => 'Configuration Emploi du Temps'
     ];
 
     // Utilisation du titre personnalisé s'il existe, sinon utilisation du titre de la page.
