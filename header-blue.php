@@ -70,7 +70,7 @@ if (!in_array('television', $current_user->roles)) :
                 <img src="https://iut.univ-amu.fr/themes/amu/amu_iut/logo.svg" alt="logo-iut" id="img-iut">
                 <script>
                     document.getElementById("img-iut").onclick = function() {
-                        window.location.href = "https://secretaria-iut.alwaysdata.net/secretary/welcome/";
+                        window.location.href = "/secretary/welcome/";
                     };
                 </script>
                 <h1 id="titre"><?php echo $custom_title; ?></h1>
